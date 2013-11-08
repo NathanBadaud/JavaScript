@@ -80,7 +80,7 @@ EventEmitter.prototype = {
   }
 };
 
-var julien   = new EventEmitter();
+var julien = new EventEmitter();
 var fn = console.log.bind(console);
 
 julien.on('event1', fn)
@@ -89,7 +89,7 @@ julien.on('event1', fn)
   
   .off("event1", 1)
   .off("event2")
-  .off()
+  .off();
 
 
 /*julien.on("yeah", function() {console.log('yeah');})
